@@ -50,14 +50,14 @@ The footer links can be adapted in your `site.yaml` like this:
     footer:
       links:
         - text: Terms
-        url: '/datenschutz'
+          url: '/datenschutz'
         - text: Conditions
-        url: '/impressum'
+          url: '/impressum'
       social:
         - icon: gitlab
-        url: https://gitlab.com/marcelkr
+          url: https://gitlab.com/marcelkr
         - icon: github
-        url: https://gitlab.com/marcelkr
+          url: https://gitlab.com/marcelkr
 
 To use the social links with icons install [
 grav-plugin-embed-fontawesome](https://github.com/N-Parsons/grav-plugin-embed-fontawesome) and follow the steps to set up the SVG files needed.
