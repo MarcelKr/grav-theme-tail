@@ -12,17 +12,5 @@
         </section>
     </article>
 
-    <nav class="p-6 max-w-xl mx-auto">
-        {% if not page.isFirst %}
-        <span class="prev">
-            <a href="{{ page.nextSibling.url }}"><span class="arrow">←</span> {{ page.nextSibling.title }}</a>
-        </span>
-        {% endif %}
-
-        {% if not page.isLast %}
-        <span class="next">
-            <a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} <span class="arrow">→</span></a>
-        </span>
-        {% endif %}
-    </nav>
+    {% include 'partials/nav_prevnext.html.twig' %}
 {% endblock %}

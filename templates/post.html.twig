@@ -14,16 +14,5 @@
         </section>
     </article>
 
-    <nav class="p-6 max-w-xl mx-auto flex flex-column flex-wrap">
-        {% if not page.isFirst %}
-            <div class="w-full md:w-1/2">
-                <a href="{{ page.nextSibling.url }}">⮜ {{ page.nextSibling.title }}</a>
-            </div>
-        {% endif %}
-        {% if not page.isLast %}
-            <div class="w-full md:w-1/2 text-right">
-                <a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} ⮞</a>
-            </div>
-        {% endif %}
-    </nav>
+    {% include 'partials/nav_prevnext.html.twig' %}
 {% endblock %}
