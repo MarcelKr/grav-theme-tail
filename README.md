@@ -1,6 +1,6 @@
 # Tail Theme
 
-![](assets/tail-screenshots.jpg)
+![](assets/tail-screenshot.jpg)
 
 Inspired by grav theme [cacti](https://github.com/getgrav/grav-theme-cacti) and [julian.com](https://www.julian.com)
 
