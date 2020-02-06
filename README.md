@@ -1,4 +1,4 @@
-# Tail Theme
+# Tail Theme for Grav
 
 ![](assets/tail-screenshot.jpg)
 
@@ -47,7 +47,7 @@ You should now have all the theme files under
 # Customizing
 Most of the style can be customized by adapting the `class` attributes in the templates. This is the idea of tailwindcss's [Utility-First Approach](https://tailwindcss.com/docs/utility-first).
 
-*Important*: The final css file is cleaned up with `postcss-purgecss` and minified by `postcss-clean`. Meaning: `postcss-purgecss` looks through your template files, recognizes which classes you used and then deletes all unused CSS from the final stylesheet. Then the sylesheet is minified using `postcss-clean`.
+**Important**: The final css file is cleaned up with `postcss-purgecss` and minified by `postcss-clean`. Meaning: `postcss-purgecss` looks through your twig template files, recognizes which classes you used and then deletes all unused CSS from the final stylesheet. Then the sylesheet is minified using `postcss-clean`.
 
 In case you're trying to add classes to the templates and nothing changes, it is possible that these classes aren't used anywhere else and therefore not present in the cleaned `main.css`. See [Workflow](#workflow) on how to generate the stylesheet.
 
@@ -58,6 +58,6 @@ In case you're trying to add classes to the templates and nothing changes, it is
   - For development: `npm run compile`
   - For production: `NODE_ENV=production npm run compile`
 
-In the development mode, `main.css` is not cleaned up. In production mode, `main.css` is cleaned and unused classes and CSS is removed.
+In the development mode, `main.css` is not cleaned up. All of tailwinds classes can be used. In production mode, `main.css` is cleaned and minified.
 
 If you want to adapt how tailwind is generated, have a look at `tailwind.config.js`. If you want to adapt how postcss works, look at `postcss.config.js`. 
