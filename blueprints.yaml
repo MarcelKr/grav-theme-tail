@@ -1,0 +1,16 @@
+name: Tail
+version: 1.0
+description: A modern and clean personal blog theme for grav made with tailwindcss
+icon: group
+author:
+  name: Marcel Krüger
+  email: hallo@marcelkrueger.net
+  url: https://marcelkrueger.net
+homepage: https://github.com/MarcelKr/grav-theme-tail
+demo: https://dermarcel.de
+keywords: blog, personal blog, minimal, clean, modern, responsive, tailwind, tailwindcss, html5, css3
+bugs: https://github.com/MarcelKr/grav-theme-tail/issues
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.5.10' }

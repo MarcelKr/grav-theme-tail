@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
+<head>
+    {% block head %}
+        <meta charset="utf-8" />
+        <title>{{ header.title ? header.title ~ ' | ' : '' }}{{ site.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        {% block stylesheets %}
+            {% do assets.addCss('theme://css-compiled/main.css') %}
+        {% endblock %}
+
+        {% block assets deferred %}
+            {{ assets.css()|raw }}
+        {% endblock %}
+    {% endblock head%}
+    </head>
+    <body class="{{ page.header.body_class }} leading-normal tracking-normal text-gray-700 gradient">
+        {% block header %}
+            {% include 'partials/header.html.twig' %}
+        {% endblock %}
+
+        {% block body %}
+            <div class="mt-4 sm:mt-8 p-6">
+                {% block content %}{% endblock %}
+            </div>
+        {% endblock %}
+
+        {% block footer %}
+            {% include 'partials/footer.html.twig' %}
+        {% endblock %}
+
+        {% block javascripts %}{% endblock %}
+
+        {{ assets.js()|raw }}
+        {{ assets.js('bottom')|raw }}
+    </body>
+</html>

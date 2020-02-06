@@ -1,0 +1,25 @@
+<footer class="p-6 w-full text-gray-600 text-sm text-center">
+    <div id="footer-divider" class="w-2/3 md:w-1/3 mx-auto bg-indigo-600 h-px"></div>
+
+    <div class="p-6">
+        <div>
+            © {{ date('now')|date('Y') }} {{ site.title }}
+            {{ site.author.phone ? ' |' ~ site.author.phone : '' }}
+            | <a href="mailto:{{ site.author.email|safe_email }}">{{ site.author.email|safe_email }}</a>
+        </div>
+        <div class="text-2xl">
+            {% for link in site.footer.social %}
+                <a href="{{ link.url }}">
+                    <i class="fab fa-{{ link.icon }}"></i>
+                    <span class="sr-only">gitlab</span>
+                </a>
+            {% endfor %}
+        </div>
+        <div>
+            {% for link in site.footer.links %}
+                <a href="{{ link.url }}">{{ link.text }}</a>
+                {{ loop.last ? '' : ' |' }}
+            {% endfor %}
+        </div>
+    </div>
+</footer>
