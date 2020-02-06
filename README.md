@@ -44,7 +44,25 @@ You should now have all the theme files under
 
     /your/site/grav/user/themes/tail
 
-# Customizing
+# Site options
+The footer links can be adapted in your `site.yaml` like this:
+
+    footer:
+      links:
+        - text: Terms
+        url: '/datenschutz'
+        - text: Conditions
+        url: '/impressum'
+      social:
+        - icon: gitlab
+        url: https://gitlab.com/marcelkr
+        - icon: github
+        url: https://gitlab.com/marcelkr
+
+To use the social links with icons install [
+grav-plugin-embed-fontawesome](https://github.com/N-Parsons/grav-plugin-embed-fontawesome) and follow the steps to set up the SVG files needed.
+
+# Style customizing
 Most of the style can be customized by adapting the `class` attributes in the templates. This is the idea of tailwindcss's [Utility-First Approach](https://tailwindcss.com/docs/utility-first).
 
 **Important**: The final css file is cleaned up with `postcss-purgecss` and minified by `postcss-clean`. Meaning: `postcss-purgecss` looks through your twig template files, recognizes which classes you used and then deletes all unused CSS from the final stylesheet. Then the sylesheet is minified using `postcss-clean`.
