@@ -19,5 +19,9 @@
         </li>
         {% endfor %}
     </ul>
+
+    {% if config.plugins.pagination.enabled and page.collection.params.pagination %}
+        {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
+    {% endif %}
 </div>
 {% endblock %}
