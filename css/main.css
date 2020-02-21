@@ -2,6 +2,7 @@
 
 @tailwind components;
 
+/* purgecss start ignore */
 article h1,
 article h2,
 article h3,
@@ -51,10 +52,6 @@ article ul {
     @apply mb-3;
 }
 
-body {
-    font-family: 'Source Sans Pro';
-}
-
 article a {
   @apply text-indigo-600;
 }
@@ -71,7 +68,13 @@ blockquote {
   @apply pl-3;
 }
 
-
+code {
+  @apply bg-indigo-100;
+  @apply p-px;
+  @apply rounded;
+  @apply text-sm;
+}
+/* purgecss end ignore */
 
 /* montserrat-100 - latin */
 @font-face {
