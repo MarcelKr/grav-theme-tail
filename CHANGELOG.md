@@ -1,3 +1,9 @@
+# v1.1.3
+##  02/22/2020
+
+1. [](#bugfix)
+    * Added missing files from prev. release
+
 # v1.1.2
 ##  02/22/2020
 
