@@ -1,3 +1,9 @@
+# v1.1.2
+##  02/22/2020
+
+1. [](#bugfix)
+    * Fixed missing vertical padding of the main container
+
 # v1.1.1
 ##  02/21/2020
 
