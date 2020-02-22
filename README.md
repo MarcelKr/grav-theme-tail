@@ -22,6 +22,13 @@ There are templates for books. Books are currently a work in progress:
 * Book view template `book-list.md`
 * Book item view template `book.md`
 
+## Supported Plugins
+
+* [Markdown-Notices](https://github.com/getgrav/grav-plugin-markdown-notices)
+* [Pagination](https://github.com/getgrav/grav-plugin-pagination)
+
+See the [Optional Plugins](#optional-plugins) section for details and sample config snippets.
+
 # Installation
 
 Installing the Tail theme can be done in one of two ways. Our GPM (Grav Package Manager) installation method enables you to quickly and easily install the theme with a simple terminal command, while the manual method enables you to do so via a zip file. 
@@ -79,3 +86,22 @@ In case you're trying to add classes to the templates and nothing changes, it is
 In the development mode, `main.css` is not cleaned up. All of tailwinds classes can be used. In production mode, `main.css` is cleaned and minified.
 
 If you want to adapt how tailwind is generated, have a look at `tailwind.config.js`. If you want to adapt how postcss works, look at `postcss.config.js`. 
+
+# Optional Plugins
+
+## Markdown-Notices
+
+The [Markdown-Notices](https://github.com/getgrav/grav-plugin-markdown-notices) Plugin is supported 
+and has custom styling. I suggest the following custom configuration for the plugin:
+
+```
+enabled: true
+built_in_css: false
+level_classes: [indigo, green, yellow, red]
+```
+
+Note `level_classes` being reordered and `blue` being replaced by `indigo`.
+
+## Pagination
+
+[Pagination](https://github.com/getgrav/grav-plugin-pagination) works out of the box and needs no further configuration.

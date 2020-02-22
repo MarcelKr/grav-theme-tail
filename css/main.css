@@ -74,6 +74,41 @@ code {
   @apply rounded;
   @apply text-sm;
 }
+
+div.notices {
+  @apply m-2;
+  @apply p-3;
+  @apply rounded;
+}
+
+/* Markdown-Notices Plugin styling */
+div.notices > p {
+  @apply text-base;
+}
+
+div.notices > p:last-child {
+  @apply mb-0;
+}
+
+div.notices.indigo {
+  @apply bg-indigo-100;
+  @apply border-indigo-200;
+}
+
+div.notices.green {
+  @apply bg-green-100;
+  @apply border-green-200;
+}
+
+div.notices.yellow {
+  @apply bg-yellow-100;
+  @apply border-yellow-200;
+}
+
+div.notices.red {
+  @apply bg-red-100;
+  @apply border-red-200;
+}
 /* purgecss end ignore */
 
 /* montserrat-100 - latin */

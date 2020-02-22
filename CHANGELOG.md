@@ -1,3 +1,9 @@
+# v1.2.0
+##  02/22/2020
+
+1. [](#new)
+    * Custom styling for the Markdown-Notices Plugin. See the README for details.
+
 # v1.1.3
 ##  02/22/2020
 
