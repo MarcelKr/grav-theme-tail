@@ -5,6 +5,7 @@
         <meta charset="utf-8" />
         <title>{{ header.title ? header.title ~ ' | ' : '' }}{{ site.title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        {% include 'partials/metadata.html.twig' %}
 
         {% block stylesheets %}
             {% do assets.addCss('theme://css-compiled/main.css') %}
