@@ -1,3 +1,11 @@
+# v1.3.0
+##  02/23/2020
+
+1. [](#new)
+    * Custom styling for the Langswitcher Plugin. See the README for details.
+1. [](#bugfix)
+    * Added missing metadata template partial in the header.
+
 # v1.2.0
 ##  02/22/2020
 

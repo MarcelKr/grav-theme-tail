@@ -24,8 +24,11 @@ There are templates for books. Books are currently a work in progress:
 
 ## Supported Plugins
 
+The following plugins have custom styling by this theme:
+
 * [Markdown-Notices](https://github.com/getgrav/grav-plugin-markdown-notices)
 * [Pagination](https://github.com/getgrav/grav-plugin-pagination)
+* [Langswitcher](https://github.com/getgrav/grav-plugin-langswitcher)
 
 See the [Optional Plugins](#optional-plugins) section for details and sample config snippets.
 
@@ -105,3 +108,12 @@ Note `level_classes` being reordered and `blue` being replaced by `indigo`.
 ## Pagination
 
 [Pagination](https://github.com/getgrav/grav-plugin-pagination) works out of the box and needs no further configuration.
+
+## Langswitcher
+
+The language switching template is included in the navbar as soon as the plugin
+[Langswitcher](https://github.com/getgrav/grav-plugin-langswitcher)
+is enabled and more than one language is available in the `languages.supported` 
+array in the `system.yaml` config file.
+
+For the exact behaviour and tweaking see `partials/langswitcher.html.twig`
