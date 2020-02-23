@@ -1,0 +1,34 @@
+{% if grav.config.plugins.langswitcher.enabled and system.languages.supported|count > 1 %}
+    <ul class="flex flex-row mt-0 py-2 px-6 font-light text-xs">
+    {% for language in langswitcher.languages %}
+
+        {% set show_language = true %}
+        {% if language == langswitcher.current %}
+            {% set lang_url = page.url %}
+            {% set active_classes = ' font-bold' %}
+        {% else %}
+            {% set base_lang_url = base_url_simple ~ grav.language.getLanguageURLPrefix(language) %}
+            {% set lang_url = base_lang_url ~ langswitcher.page_route ~ page.urlExtension %}
+            {% set untranslated_pages_behavior = grav.config.plugins.langswitcher.untranslated_pages_behavior %}
+            {% if untranslated_pages_behavior != 'none' %}
+                {% set translated_page = langswitcher.translated_pages[language] %}
+                {% if (not translated_page) or (not translated_page.published) %}
+                    {% if untranslated_pages_behavior == 'redirect' %}
+                        {% set lang_url = base_lang_url ~ '/' %}
+                    {% elseif untranslated_pages_behavior == 'hide' %}
+                        {% set show_language = false %}
+                    {% endif %}
+                {% endif %}
+            {% endif %}
+            {% set active_classes = '' %}
+        {% endif %}
+
+        {% if show_language %}
+            <li class="mr-3 last:mr-0{{ active_classes }} flex items-center">
+                <a href="{{ lang_url ~ uri.params }}" class="align-middle">{{ language }}</a>
+            </li>
+        {% endif %}
+
+    {% endfor %}
+    </ul>
+{% endif %}

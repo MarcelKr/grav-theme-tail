@@ -1,9 +1,11 @@
-<nav id="navigation" class="fixed w-full z-30 top-0 bg-white text-indigo-600">
-    <ul class="flex flex-row flex-wrap mt-0 py-2 px-6 font-light w-auto justify-center sm:justify-end">
+<nav id="navigation" class="fixed w-full flex flex-row justify-center sm:justify-end z-30 top-0 bg-white text-indigo-600">
+    <ul class="flex flex-row mt-0 py-2 px-6 font-light">
         {% for page in pages.children.visible %}
         <li class="mr-6 last:mr-0 no-underline">
             <a href="{{ page.url }}">{{ page.menu }}</a>
         </li>
         {% endfor %}
     </ul>
+
+    {% include 'partials/langswitcher.html.twig' %}
 </nav>
