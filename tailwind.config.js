@@ -1,5 +1,3 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
     theme: {
         rotate: {
@@ -13,7 +11,14 @@ module.exports = {
             '180': '180deg',
         },
         fontFamily: {
-          'sans': ['"Source Sans Pro"', defaultTheme.fontFamily.sans],
+            'sans': [
+                '"Source Sans Pro"',
+                '"Noto Sans"',
+                'Roboto',
+                '"Helvetica Neue"',
+                'Arial',
+                'sans-serif',
+            ],
         },
     },
     variants: {
