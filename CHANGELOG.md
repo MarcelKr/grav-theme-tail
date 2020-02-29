@@ -1,3 +1,9 @@
+# v1.3.1
+##  02/29/2020
+
+1. [](#improved)
+    * Adapted font stack to tested fonts only to avoid unexpected symbols
+
 # v1.3.0
 ##  02/23/2020
 
