@@ -1,3 +1,11 @@
+# v1.4.0
+##  03/06/2020
+
+1. [](#new)
+    * Support for Matomo analytics
+1. [](#improved)
+    * Better date format for German and English
+
 # v1.3.1
 ##  02/29/2020
 
