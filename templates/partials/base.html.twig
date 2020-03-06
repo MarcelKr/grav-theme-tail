@@ -35,5 +35,9 @@
 
         {{ assets.js()|raw }}
         {{ assets.js('bottom')|raw }}
+
+        {% if site.matomo.enabled %}
+            {% include 'partials/matomo.html.twig' %}
+        {% endif %}
     </body>
 </html>

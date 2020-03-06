@@ -10,6 +10,7 @@ Inspired by grav theme [cacti](https://github.com/getgrav/grav-theme-cacti) and 
 * Made with [tailwindcss](https://tailwindcss.com/)
 * Fully responsive
 * Multiple page template types
+* Matomo-Support
 
 ## Supported Page Templates
 
@@ -55,6 +56,8 @@ You should now have all the theme files under
     /your/site/grav/user/themes/tail
 
 # Site options
+
+## Footer
 The footer links can be adapted in your `site.yaml` like this:
 
     footer:
@@ -71,6 +74,18 @@ The footer links can be adapted in your `site.yaml` like this:
 
 To use the social links with icons install [
 grav-plugin-embed-fontawesome](https://github.com/N-Parsons/grav-plugin-embed-fontawesome) and follow the steps to set up the SVG files needed.
+
+## Matomo
+Matomo is also configured via `site.yaml`. This is how a sample configuration:
+
+    matomo:
+        enabled: true
+        matomo_url: matomo.mysite.de
+        site_id: 1
+
+Once enabled, the partial `partials/matomo.html.twig` is included in the base template.
+`matomo_url` denotes the matomo URL. `site_id` configures the site ID used in Matomo.
+If you have several sites configured it might be != 1.
 
 # Style customizing
 Most of the style can be customized by adapting the `class` attributes in the templates. This is the idea of tailwindcss's [Utility-First Approach](https://tailwindcss.com/docs/utility-first).
