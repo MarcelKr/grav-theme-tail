@@ -7,7 +7,11 @@
             {% if page.header.headline %}
                 <h2 class="text-lg sm:text-xl font-light mb-2 sm:mb-3">{{ page.header.headline }}</h2>
             {% endif %}
-            <h3 class="text-gray-600 font-light">{{ page.header.date|date('d. M Y') }}</h3>
+            <h3 class="text-gray-600 font-light">
+                {{ page.header.date|date('d.') }}
+                {{ "GRAV.MONTHS_OF_THE_YEAR_SHORT"|ta(page.header.date|date('n') - 1) }}.
+                {{ page.header.date|date('Y') }}
+            </h3>
         </header>
         <section>
             {{ page.content }}
