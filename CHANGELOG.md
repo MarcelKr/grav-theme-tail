@@ -1,3 +1,11 @@
+# v1.4.1
+##  07/19/2020
+
+1. [](#new)
+    * Added the [Tailwind Typography plugin](https://tailwindcss.com/docs/typography-plugin/) for more awesome typography.
+1. [](#improved)
+    * Updated third party librarys and adapted the tailwind configuration regarding the new features of tailwind.
+  
 # v1.4.0
 ##  03/06/2020
 
