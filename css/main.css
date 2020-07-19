@@ -1,71 +1,11 @@
+/* purgecss start ignore */
 @tailwind base;
-
 @tailwind components;
 
-/* purgecss start ignore */
-article h1,
-article h2,
-article h3,
-article h4,
-article h5 {
+article > header > h1,
+article > header > h2 {
     @apply text-indigo-600;
-    @apply font-bold;
-    font-family: 'Montserrat';
-}
-
-article h1 {
-    @apply mt-4;
-    @apply mb-1;
-    @apply text-3xl;
-}
-article h2 {
-    @apply mt-3;
-    @apply mb-1;
-    @apply text-2xl;
-}
-article h3 {
-    @apply mt-2;
-    @apply mb-1;
-    @apply text-xl;
-}
-article h4 {
-    @apply mt-2;
-    @apply mb-1;
-    @apply text-lg;
-}
-article h5 {
-    @apply mt-2;
-    @apply mb-1;
-}
-
-article p {
-    @apply mb-3;
-    @apply text-lg;
-    @apply leading-relaxed;
-    hyphens: auto;
-}
-
-article ol,
-article ul {
-    @apply list-disc;
-    @apply pl-5;
-    @apply mb-3;
-}
-
-article a {
-  @apply text-indigo-600;
-}
-
-article a:hover {
-  @apply text-pink-600;
-  @apply underline;
-}
-
-blockquote {
-  @apply border-l-2;
-  @apply border-indigo-400;
-  @apply ml-3;
-  @apply pl-3;
+    font-family: 'Montserrat'
 }
 
 code {
@@ -82,8 +22,8 @@ div.notices {
 }
 
 /* Markdown-Notices Plugin styling */
-div.notices > p {
-  @apply text-base;
+div.notices > p:first-child {
+  @apply mt-0;
 }
 
 div.notices > p:last-child {
@@ -390,17 +330,5 @@ div.notices.red {
          url('../fonts/source-sans-pro-v13-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/source-sans-pro-v13-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-
-
-
-
-
-
-
-
-
-
-
-
 
 @tailwind utilities;
