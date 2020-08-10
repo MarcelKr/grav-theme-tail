@@ -2,8 +2,11 @@
 
 {% block content %}
 <article class="max-w-xl mx-auto">
-    <header>
-        <h1>{{ page.header.title }}</h1>
+    <header class="text-center mb-6 sm:mb-12">
+        <h1 class="text-2xl sm:text-4xl font-bold">{{ page.title }}</h1>
+        {% if page.header.headline %}
+            <h2 class="text-lg sm:text-xl font-light mb-2 sm:mb-3">{{ page.header.headline }}</h2>
+        {% endif %}
     </header>
 
     <div class="prose">
