@@ -1,3 +1,13 @@
+# v1.4.2
+##  08/10/2020
+
+1. [](#bugfix)
+    * Fixed the default template not using tailwind's `prose` class and not rendering content properly
+1. [](#improved)
+    * Having a proper header for the default template now
+1. [](#improved)
+    * Bumped tailwind version to 1.6.2
+
 # v1.4.1
 ##  07/19/2020
 
