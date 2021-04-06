@@ -1,3 +1,9 @@
+# v1.4.3
+##  04/06/2020
+
+1. [](#improved)
+    * Updated third party libraries
+    
 # v1.4.2
 ##  08/10/2020
 
