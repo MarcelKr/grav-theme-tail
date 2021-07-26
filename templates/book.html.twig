@@ -8,7 +8,7 @@
             <h2 class="text-gray-600 font-light">{{ page.header.date|date('d. M Y') }}</h2>
         </header>
         <section>
-            {{ page.content }}
+            {{ page.content|raw }}
         </section>
     </article>
 
