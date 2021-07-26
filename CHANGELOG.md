@@ -1,5 +1,11 @@
+# v1.4.4
+##  07/26/2021
+
+1. [](#bugfix)
+    * Fix pages showing escaped markdown when using default settings and not enabling twig compat mode
+
 # v1.4.3
-##  04/06/2020
+##  04/06/2021
 
 1. [](#improved)
     * Updated third party libraries
