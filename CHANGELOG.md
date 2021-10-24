@@ -1,3 +1,13 @@
+# v1.5.0
+##  10/24/2021
+
+1. [](#improved)
+    * Upgrade to TailwindCSS 2
+1. [](#improved)
+    * Using `cssnano` instead of `postcss-clean` which seems to be broken
+1. [](#improved)
+    * Primary color is now defined in the tailwind config file
+    
 # v1.4.4
 ##  07/26/2021
 
