@@ -3,29 +3,29 @@
 
 {% if pagination|length > 1 %}
 
-<ul class="flex flex-row justify-center text-indigo-600 hover:text-indigo-700 mt-12">
+<ul class="flex flex-row justify-center text-primary hover:text-indigo-700 mt-12">
     {% if pagination.hasPrev %}
         {% set url =  (base_url ~ pagination.params ~ pagination.prevUrl)|replace({'//':'/'}) %}
-        <li class="m-1 px-2 text-indigo-600 font-bold rounded"><a rel="prev" href="{{ url }}">&laquo;</a></li>
+        <li class="m-1 px-2 text-primary font-bold rounded"><a rel="prev" href="{{ url }}">&laquo;</a></li>
     {% else %}
-        <li class="m-1 px-2 text-indigo-600 font-bold rounded"><span>&laquo;</span></li>
+        <li class="m-1 px-2 text-primary font-bold rounded"><span>&laquo;</span></li>
     {% endif %}
 
     {% for paginate in pagination %}
         {% if paginate.isCurrent %}
-            <li class="m-1 px-2 text-white bg-indigo-600 font-bold rounded">{{ paginate.number }}</li>
+            <li class="m-1 px-2 text-white bg-primary font-bold rounded">{{ paginate.number }}</li>
         {% elseif paginate.isInDelta %}
             {% set url = (base_url ~ pagination.params ~ paginate.url)|replace({'//':'/'}) %}
-            <li class="m-1 px-2 text-indigo-600 font-bold rounded"><a href="{{ url }}">{{ paginate.number }}</a></li>
+            <li class="m-1 px-2 text-primary font-bold rounded"><a href="{{ url }}">{{ paginate.number }}</a></li>
         {% elseif paginate.isDeltaBorder %}
             <li class="gap"><span>&hellip;</span></li>
         {% endif %}
     {% endfor %}
     {% if pagination.hasNext %}
         {% set url = (base_url ~ pagination.params ~ pagination.nextUrl)|replace({'//':'/'}) %}
-        <li class="m-1 px-2 text-indigo-600 font-bold rounded"><a rel="next" href="{{ url }}">&raquo;</a></li>
+        <li class="m-1 px-2 text-primary font-bold rounded"><a rel="next" href="{{ url }}">&raquo;</a></li>
     {% else %}
-        <li class="m-1 px-2 text-indigo-600 font-bold rounded"><span>&raquo;</span></li>
+        <li class="m-1 px-2 text-primary font-bold rounded"><span>&raquo;</span></li>
     {% endif %}
 </ul>
 
