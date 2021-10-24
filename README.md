@@ -90,7 +90,7 @@ If you have several sites configured it might be != 1.
 # Style customizing
 Most of the style can be customized by adapting the `class` attributes in the templates. This is the idea of tailwindcss's [Utility-First Approach](https://tailwindcss.com/docs/utility-first).
 
-**Important**: The final css file is cleaned up with `postcss-purgecss` and minified by `postcss-clean`. Meaning: `postcss-purgecss` looks through your twig template files, recognizes which classes you used and then deletes all unused CSS from the final stylesheet. Then the sylesheet is minified using `postcss-clean`.
+**Important**: The final css file is cleaned up with `postcss-purgecss` and minified by `cssnano`. Meaning: `postcss-purgecss` looks through your twig template files, recognizes which classes you used and then deletes all unused CSS from the final stylesheet. Then the sylesheet is minified using `cssnano`.
 
 In case you're trying to add classes to the templates and nothing changes, it is possible that these classes aren't used anywhere else and therefore not present in the cleaned `main.css`. See [Workflow](#workflow) on how to generate the stylesheet.
 
