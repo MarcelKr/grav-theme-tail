@@ -1,3 +1,9 @@
+# v1.5.1
+##  07/25/2023
+
+1. [](#improved)
+    * Use site.title as main headline instead of site.author.name
+
 # v1.5.0
 ##  10/24/2021
 
@@ -7,7 +13,7 @@
     * Using `cssnano` instead of `postcss-clean` which seems to be broken
 1. [](#improved)
     * Primary color is now defined in the tailwind config file
-    
+
 # v1.4.4
 ##  07/26/2021
 
@@ -19,7 +25,7 @@
 
 1. [](#improved)
     * Updated third party libraries
-    
+
 # v1.4.2
 ##  08/10/2020
 
@@ -37,7 +43,7 @@
     * Added the [Tailwind Typography plugin](https://tailwindcss.com/docs/typography-plugin/) for more awesome typography.
 1. [](#improved)
     * Updated third party librarys and adapted the tailwind configuration regarding the new features of tailwind.
-  
+
 # v1.4.0
 ##  03/06/2020
 
