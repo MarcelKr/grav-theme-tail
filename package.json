@@ -3,16 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "postcss.config.js",
-  "dependencies": {
-    "@tailwindcss/typography": "^0.4.1",
-    "autoprefixer": "^10.3.7",
-    "cssnano": "^5.0.8",
-    "postcss": "^8.3.11",
-    "postcss-cli": "^9.0.1",
-    "tailwindcss": "^2.2.17",
-    "tailwindcss-transitions": "^2.2.0"
+  "dependencies": {},
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.27",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.3.3"
   },
-  "devDependencies": {},
   "scripts": {
     "compile": "postcss css/main.css -o css-compiled/main.css"
   },

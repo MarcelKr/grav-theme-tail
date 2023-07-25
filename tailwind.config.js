@@ -67,15 +67,8 @@ module.exports = {
             })
         }
     },
-    variants: {
-        margin: ['last'],
-    },
     plugins: [
         require('@tailwindcss/typography'),
-        require('tailwindcss-transitions'),
     ],
-    purge: {
-        mode: 'all', // to purge the unused typography stuff
-        content: ['./templates/**/*.html.twig'],
-    },
+    content: ['./templates/**/*.html.twig'],
 }

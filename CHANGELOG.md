@@ -1,3 +1,9 @@
+# v1.6.0
+##  07/25/2023
+
+1. [](#new)
+    * Upgrade from TailwindCSS 2 to 3
+
 # v1.5.1
 ##  07/25/2023
 
